@@ -1,0 +1,37 @@
+package com.homework;
+
+import java.util.Scanner;
+
+public class Homework040 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		String name;
+		String responsibility;
+
+		System.out.println("Enter name of the instructor");
+		name = scan.next();
+
+		switch (name) {
+
+		case "Ashgar":
+			responsibility = "Will take care of Java Assignment";
+			break;
+		case "Moazzam":
+			responsibility = "Will take care of SDLC Assignment";
+			break;
+		case "Weqas":
+			responsibility = "Will take care of Selenium Assignment";
+			break;
+		case "Asel":
+			responsibility = "Will take care of every Assignment";
+			break;
+		default:
+			responsibility = "Invalid instructor selected";
+		}
+		System.out.println(responsibility);
+	}
+
+}
